@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JazzPunkyy1.0</title>
+  <style>
+    body {
+      background-color: #d0e8e0; /* A shade of teal between blue and green */
+      font-family: Arial, sans-serif;
+      color: #333; /* Text color */
+    }
+
+    h1 {
+      color: #008080; /* Teal for the page title */
+    }
+
+    h2 {
+      color: #008080; /* Teal for section headers */
+    }
+
+    li {
+      color: #333; /* Text color for list items */
+    }
+
+    hr {
+      border: 1px solid #008080; /* Teal horizontal rule */
+    }
+  </style>
+</head>
+<body>
+  <h1>JazzPunkyy</h1>
+  The objective of the <i>JazzPunkyy</i> is to create a simple and easy way to store links and URLs in text files that receive a hash as a filename.
+  <br><br>
+  <ul>
+    <li>Save URLs as text files in the 'hashes' directory.</li>
+    <li>Save the links from URLs with hash names.</li>
+    <li>Create the hash of files (SHA256).</li>
+    <li>Create numbered files (to facilitate their download).</li>
+    <li>A layer can be built to check which nodes or hosts have more hashes or the number of nodes or hosts that have a hash.</li>
+    <li>People can search for websites using their own computer power and the help of the network.</li>
+    <li>People will be able to search and discover web pages using their own computer and storing the data.</li>
+    <li>People can have some gain since they contribute computational power to the discovery of new addresses, websites, and domains.</li>
+  </ul>
+  <hr>
+  <h2>What is required for someone to be a node or a host?</h2>
+  <ul>
+    <li>It's enough for them to have the 'hashes' directory on their system, where text files (files with '.txt' extension) are stored containing only one link or URL, and the name of each file is the SHA-256 hash based on its content.</li>
+    <li>If you want to store files, it is necessary to have the 'files' directory. In this directory, the files will be named in an incremental manner (natural number) along with their extension, for example, '1.jpg, 2.jpg, 3.jpg...'</li>
+    <li>To store only the main part of the domain (for example, 'http://google.com/users/' or 'http://google.com/news/' will be saved as 'http://google.com'), you can use the 'hashes_domain' directory. In 'hashes_contents,' the captured content of each URL or page address will be stored.</li>
+  </ul>
+  <h2>Tips and other ideas</h2>
+  <ul>
+    <li>The way files are saved is designed to make it easier for a node to check the content of other nodes. In other words, it's a very simple and straightforward implementation that can be complemented with additional layers (such as the layer that actually verifies nodes) or with modern databases.</li>
+    <li>One of the project's goals is to encourage the existence of various types of nodes, meaning each type of node performs a specific function, much like different animals in nature. The smaller the task a node can perform, the better, as it allows computers with fewer resources to participate and utilize more abundant resources. Similarly, a node may be capable of executing all operations. The more operable pieces the system can decompose into, the better.</li>
+  </ul>
+
+  <a href='README.txt'>README</a> | <a href='JazzPunkyy1.0.zip'>Sourcecode</a>
+</body>
+</html>

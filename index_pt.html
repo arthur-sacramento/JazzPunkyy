@@ -1,58 +1,251 @@
 ﻿<!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>JazzPunkyy1.0</title>
-  <style>
-    body {
-      background-color: #d0e8e0; /* A shade of teal between blue and green */
-      font-family: Arial, sans-serif;
-      color: #333; /* Text color */
-    }
+    <link rel="icon" href="background/logo.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decentralized Search Engine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
 
-    h1 {
-      color: #008080; /* Teal for the page title */
-    }
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
 
-    h2 {
-      color: #008080; /* Teal for section headers */
-    }
+        h1 {
+            font-size: 36px;
+        }
 
-    li {
-      color: #333; /* Text color for list items */
-    }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-    hr {
-      border: 1px solid #008080; /* Teal horizontal rule */
-    }
-  </style>
+        .search-box {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            width: 60%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .text-01{
+            color: #333333;
+            text-align: justify;
+            font-size: 20px;
+        }
+
+        .text-02{
+            color: #333333;
+            text-align: justify;
+            font-size: 11px;
+            padding: 10px 50px 10px 50px;
+        }
+
+        .text-03{
+            color: #666666;
+            text-align: justify;
+            font-size: 14px;
+            font-family: verdana;
+
+        }
+
+        .text-copyright{
+            color: #666666;
+            text-align: justify;
+            font-size: 12px;            
+            font-family: verdana;
+        }
+
+        .gray-button {
+            background-color: #808080; /* Use the gray color of your choice */
+            color: #ffffff; /* Text color on the button */
+            border: none;
+            border-radius: 4px; /* Rounded corners */
+            padding: 10px 20px; /* Adjust the padding as needed */
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 5px;
+            cursor: pointer;
+            transition: background-color 0.3s; /* Smooth transition effect */
+            border-radius: 5px 5px 5px 5px;
+        }
+
+        .gray-button:hover {
+            background-color: #606060; /* Darker gray on hover */
+        }
+
+        .gray-button:active {
+            background-color: #404040; /* Even darker gray on click */
+        }
+
+        .gray-mini-button {
+            background-color: #808080; /* Use the gray color of your choice */
+            color: #ffffff; /* Text color on the button */
+            border: none;
+            border-radius: 4px; /* Rounded corners */
+            padding: 10px 20px; /* Adjust the padding as needed */
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1px;
+            margin: 10px 5px;
+            cursor: pointer;
+            transition: background-color 0.3s; /* Smooth transition effect */
+            border-radius: 5px 5px 5px 5px;
+        }
+
+    </style>
 </head>
 <body>
-  <h1>JazzPunkyy</h1>
-  O objetivo do <i>JazzPunkyy</i> é criar uma maneira simples e fácil de armazenar links e URLs em arquivos de texto que recebem um hash como nome de arquivo.
-  <br><br>
-  <ul>
-    <li>Salvar URLs como arquivos de texto no diretório 'hashes'.</li>
-    <li>Salvar os links das URLs com nomes de hash.</li>
-    <li>Criar o hash de arquivos (SHA256).</li>
-    <li>Criar arquivos numerados (para facilitar o download).</li>
-    <li>Pode ser criada uma camada para verificar quais nós ou hosts têm mais hashes ou o número de nós ou hosts que possuem um hash.</li>
-    <li>As pessoas podem procurar por sites usando o poder de seus próprios computadores e a ajuda da rede.</li>
-    <li>As pessoas serão capazes de pesquisar e descobrir páginas da web usando seus próprios computadores e armazenando os dados.</li>
-    <li>As pessoas podem obter algum ganho, uma vez que contribuem com poder de processamento para a descoberta de novos endereços, sites e domínios.</li>
-  </ul>
-  <hr>
-  <h2>O que é necessário para alguém ser um nó ou um host?</h2>
-  <ul>
-    <li>É suficiente ter o diretório 'hashes' em seu sistema, onde são armazenados arquivos de texto (arquivos com extensão '.txt') contendo apenas um link ou URL, e o nome de cada arquivo é o hash SHA-256 com base em seu conteúdo.</li>
-    <li>Se você deseja armazenar arquivos, é necessário ter o diretório 'files'. Neste diretório, os arquivos terão nomes incrementais (número natural) juntamente com sua extensão, por exemplo, '1.jpg, 2.jpg, 3.jpg...'</li>
-    <li>Para armazenar apenas a parte principal do domínio (por exemplo, 'http://google.com/users/' ou 'http://google.com/news/' será salvo como 'http://google.com'), você pode usar o diretório 'hashes_domain'. Em 'hashes_contents,' o conteúdo capturado de cada URL ou endereço da página será armazenado.</li>
-  </ul>
-  <h2>Dicas e outros</h2>
-  <ul>
-    <li>A forma como os arquivos são salvos foi projetada para facilitar que um nó verifique o conteúdo de outros nós. Em outras palavras, é uma implementação muito simples e direta que pode ser complementada com camadas adicionais (como a camada que efetivamente verifica os nós) ou com bancos de dados modernos.</li>
-    <li>Um dos objetivos do projeto é fomentar a existência de vários tipos de nós, ou seja, cada tipo de nó desempenha uma função específica, assim como diferentes animais na natureza. Quanto menor for a tarefa que um nó pode executar, melhor, pois permite que computadores com menos recursos participem e utilizem recursos mais abundantes. Da mesma forma, um nó pode ser capaz de executar todas as operações. Quanto mais partes operacionais o sistema puder se decompor, melhor.</li>
-  </ul>
-  <a href='README.txt'>README</a> | <a href='JazzPunkyy1.0.zip'>Sourcecode</a>
+
+  <div class='text-02'>
+      <a href='index.html'>English</a> | <a href='index_pt.html'>Português</a> | <a href='index_ch.html'>中文</a>  
+  </div>
+  
+  <form id="redirectForm">   
+    <div class="container">
+         <div class="search-box">
+            <input type="text" placeholder="search" id="fileName" name="fileName" required>
+            <button>Search</button>
+            <ul id="autocomplete-list"></ul>  
+        </div>
+    </div>
+  </form>
+
+<script>
+
+// List of words for autocomplete
+    const wordList = ["arte", "livros", "descentralizacao", "freeware", "linux", "PHP", "opensource", "musica", "videos", "pesquisa", "tech"];
+
+    // Input element and autocomplete list
+    const fileNameInput = document.getElementById("fileName");
+    const autocompleteList = document.getElementById("autocomplete-list");
+
+    // Event listener for input changes
+    fileNameInput.addEventListener("input", function () {
+      const inputValue = fileNameInput.value.toLowerCase();
+      const suggestions = [];
+
+      // Clear previous suggestions
+      autocompleteList.innerHTML = "";
+
+      // Filter words that start with the input value
+      for (const word of wordList) {
+        if (word.toLowerCase().startsWith(inputValue)) {
+          suggestions.push(word);
+        }
+      }
+
+      // Display suggestions in the autocomplete list
+      suggestions.forEach((word) => {
+        const listItem = document.createElement("li");
+        listItem.textContent = word;
+        listItem.addEventListener("click", function () {
+          // Set the input field value to the clicked suggestion
+          fileNameInput.value = word;
+          // Clear the suggestions
+          autocompleteList.innerHTML = "";
+        });
+        autocompleteList.appendChild(listItem);
+      });
+    });
+
+        document.getElementById("redirectForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const fileNameInput = document.getElementById("fileName");
+            const fileName = fileNameInput.value;
+            const redirectURL = `contents/${fileName}.html`;
+
+            // Check if the file exists
+            fetch(redirectURL)
+                .then(response => {
+                    if (response.status === 200) {
+                        // File exists, redirect to it
+                        window.location.href = redirectURL;
+                    } else {
+                        // File does not exist, show an error message
+                        alert("File does not exist.");
+                    }
+                })
+                .catch(error => {
+                    // Error occurred while checking file existence
+                    //console.error("Error:", error);
+                    alert("An error occurred while checking file existence.");
+                    window.location.href = redirectURL;
+                });
+        });
+
+    </script>
+
+<div align='center'>
+    <br>
+    <table width='90%'>
+      <tr>
+        <td width='50%'>
+          <div class='text-01' valign='top'>
+            JazzPunkyy é o projeto de um buscador descentralizado e de código aberto. Nosso objetivo é construir uma plataforma onde você pode procurar sites sem intermediários usando seu próprio computador para buscar e armazenar dados. Opcionalmente, você pode participar da nossa rede para lucrar com <a href='https://pt.wikipedia.org/wiki/Prova_de_trabalho' target='_blank'>o trabalho realizado pelo seu computador</a>.<br><br>
+            <a href='jazzpunkyy1.0.2.zip' class='gray-button'>Código-Fonte</a>
+            <a href='about_pt.html' class='gray-button'>Guia</a>
+          </div>
+          <div class='text-03'>
+            <br><br>
+            <b><li>financiando o projeto</li></b><br>
+            Você pode obter rendimentos adquirindo o nome exclusivo de uma página e toda vez que alguém pesquisar por ela você receberá uma quantia. <br><br><br>
+            <b><li>contribuindo com código e novas funcionalidades</li></b><br>
+            Você pode expandir o projeto usando a sua linguagem favorita e <a href='https://pt.wikipedia.org/wiki/Microsservi%C3%A7o' target='_blank'>arquitetura de microsserviços</a> para ter acesso a potenciais ganhos futuros.
+          </div>
+          <br>
+          <span class='text-copyright'>JazzPunkyy - todos os direitos reservados</span> &nbsp;  <a href='README.txt' class='text-copyright'>Termos de uso<a>
+        </td>
+        <td align='center' valign='top' style='color: #DDDDDD;'>
+          <a href='graph.jpg' target='_blank'><img src='background/graph.jpg' width='50%'></a>
+          <div class='text-02'>Queremos construir uma plataforma para monetizar de forma justa operações de armazenamento e busca, além de facilitar a troca de dados entre servidores e nós.</div>
+         
+<div align='center'>
+            <a href='#' class='gray-button' onclick="alert('exthothem@gmail.com');"><table><tr><td>Comprar via PIX </td><td><img src='icons/pix.png' width='50px'></td></tr></table></a><br><br>
+</div>
+<div align='right'>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick" />
+              <input type="hidden" name="hosted_button_id" value="6FFCY5JN8PELU" />
+              <input type="hidden" name="currency_code" value="USD" />
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" title="PayPal - A forma mais segura e fácil de pagar online!" alt="Compre Agora" />
+            </form>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <br>
+  </div>
 </body>
 </html>

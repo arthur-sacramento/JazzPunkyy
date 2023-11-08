@@ -1,0 +1,33 @@
+﻿a {
+  text-decoration: none;
+  color: #007bff;
+  border-bottom: 1px solid #CCC;
+  padding: 10px;
+}
+
+a:hover {
+  background-color: #DDD;
+}
+
+.nextButton {
+  background-color: #808080; /* Use the gray color of your choice */
+  color: #ffffff; /* Text color on the button */
+  border: none;
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px 20px; /* Adjust the padding as needed */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition effect */
+}
+    
+.nextButton:hover {
+  background-color: #606060; /* Darker gray on hover */
+}
+
+.nextButton:active {
+  background-color: #404040; /* Even darker gray on click */
+}
